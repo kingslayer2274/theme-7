@@ -1,0 +1,78 @@
+body {
+  #front {
+    background-image: linear-gradient(to right, rgba($sea, 0.4), rgba($sea, 0.4)), url("../images/campus-7.jpg");
+    background-size: cover;
+    padding: 17rem 4rem;
+    .title {
+      margin-top: 3rem;
+      color: white;
+      font-size: 2.2rem;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  #why {
+    background-color: $bg-light;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    .title {
+      font-size: 1.9rem;
+      color: $sea;
+    }
+    .why {
+      background: white;
+      padding: 3rem 0rem;
+      svg {
+        font-size: 2.7rem;
+        color: $sea;
+      }
+      .title {
+        font-size: 1.3rem;
+        color: $dark-sea;
+      }
+    }
+  }
+  #about-info {
+    padding: 6rem 2rem 5rem;
+    .title {
+      color: $sea;
+    }
+    .sub-title {
+      font-size: 1.4rem;
+      color: $dark-sea;
+    }
+    .founders {
+      img {
+        border-radius: 24rem;
+        height: 7rem;
+        width: 7rem;
+      }
+      .founder-1,
+      .founder-2 {
+        margin-top: 4rem;
+        display: inline-block;
+      }
+      .founder-1 {
+        margin-right: 3rem;
+      }
+      .founder-name-1,
+      .founder-name-2 {
+        margin: 1rem;
+        color: $sea;
+      }
+    }
+    .col-md-4 {
+      border: 1px solid #eee;
+      padding: 3rem 2rem;
+      ul {
+        li {
+          svg {
+            color: $sea;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

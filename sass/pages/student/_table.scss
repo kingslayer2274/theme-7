@@ -1,0 +1,28 @@
+#table {
+  margin-top: 3rem;
+  padding: 5rem 1rem;
+  background-image: linear-gradient(to right, rgba($sea, 0.4), rgba($sea, 0.4)), url("../images/campus-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  .table-title {
+    font-size: 2rem;
+    color: white;
+  }
+  a.btn {
+    border-bottom: 1px solid $dark;
+    color: white;
+    padding-bottom: 1rem;
+    &:hover {
+      transform: scale(1.2, 1.2);
+      transition: all 0.5s;
+    }
+  }
+}
+
+@media only screen and(max-width:500px) {
+  #table {
+    .table-title {
+      font-size: 0.8rem;
+    }
+  }
+}

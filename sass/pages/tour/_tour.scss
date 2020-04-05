@@ -1,0 +1,44 @@
+body {
+  .sec-1 div {
+    background-image: linear-gradient(to right, rgba($sea, 0.4), rgba($sea, 0.4)), url("../images/intro.png") !important;
+    .title {
+      color: white;
+      // padding-top: 20rem;
+      h2 {
+        font-size: 6rem;
+      }
+    }
+  }
+  .sec-2 div {
+    background-image: linear-gradient(to right, rgba($sea, 0.4), rgba($sea, 0.4)), url("../images/campus-7.jpg") !important;
+    h2 {
+      font-size: 6rem;
+    }
+  }
+  .sec-3 div {
+    background-image: linear-gradient(to right, rgba($sea, 0.4), rgba($sea, 0.4)), url("../images/campus-5.jpg") !important;
+    h2 {
+      font-size: 6rem;
+    }
+  }
+  .sec-4 div {
+    background-image: linear-gradient(to right, rgba($sea, 0.4), rgba($sea, 0.4)), url("../images/campus-6.jpg") !important;
+    h2 {
+      font-size: 6rem;
+    }
+  }
+}
+
+@media only screen and(max-width:500px) {
+  .sec-1,
+  .sec-2,
+  .sec-3,
+  .sec-4 {
+    div {
+      h2 {
+        font-size: 2rem !important;
+        font-weight: bold;
+      }
+    }
+  }
+}

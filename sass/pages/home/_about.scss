@@ -1,0 +1,35 @@
+#about {
+  padding-bottom: 4rem;
+  .container {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+  }
+  .title {
+    margin-top: 7rem;
+    font-size: 1.8rem;
+    color: $sea;
+  }
+  .cert {
+    margin-top: 5rem;
+    svg {
+      color: $very-dark;
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    .sub-title {
+      font-size: 1.5rem;
+      color: $dark-sea;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about {
+    margin-top: 32rem;
+    .col-md-6 {
+      .row {
+        margin-top: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+#courses {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  background-color: #f6f8fa;
+  .card-container {
+    position: relative;
+
+    .card-top {
+      position: absolute;
+      opacity: 0;
+      z-index: 88;
+
+      &:hover {
+        opacity: 1;
+        top: -4rem;
+        transition: all 0.5s;
+      }
+    }
+    .card-over {
+      .card-body {
+        .line {
+          margin-top: -1rem;
+          color: $dark;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:500px) {
+  #courses {
+    margin-top: 30rem !important;
+    .card-container {
+      .card-top {
+        &:hover {
+          max-width: 95%;
+          left: 0.6rem;
+          top: -2.2rem;
+        }
+      }
+    }
+  }
+}

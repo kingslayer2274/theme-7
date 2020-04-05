@@ -1,0 +1,35 @@
+#focus {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  .title {
+    font-size: 1.8rem;
+    color: $sea;
+  }
+  .focus-1,
+  .focus-2,
+  .focus-3,
+  .focus-4 {
+    color: $dark-sea;
+    .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .num {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $very-dark;
+    }
+  }
+  .focus-2,
+  .focus-4 {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and(max-width:500px) {
+  #focus {
+    .focus-1 {
+      margin-top: 8rem;
+    }
+  }
+}

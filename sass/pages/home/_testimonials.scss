@@ -1,0 +1,74 @@
+#testimonials {
+  padding: 4rem 2rem 2rem;
+  background-image: linear-gradient(to right, rgba($dark-sea, 0.4), rgba($dark-sea, 0.4)), url("../images/campus-1.jpg");
+  background-size: cover;
+  .owl-carousel {
+    position: relative;
+    .owl-nav {
+      .owl-next,
+      .owl-prev {
+        padding: 4rem 2rem !important;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 3rem;
+        &:hover {
+          background-color: rgba(255, 255, 255, 1);
+          transition: all 0.5s;
+        }
+      }
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 8%;
+      }
+    }
+    .owl-dots svg {
+      color: $very-dark;
+      font-size: 0.9rem;
+    }
+    .slider-1 {
+      padding-bottom: 4rem;
+      .cap-1 {
+        padding-top: 20rem;
+        font-size: 3rem;
+        color: white;
+      }
+      .caro-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+      }
+      .stu-1 {
+        border-radius: 24rem;
+        height: 6rem;
+        width: 6rem;
+        margin: 2rem auto;
+        filter: brightness(1.5);
+      }
+    }
+    .slider-2 {
+      padding-bottom: 4rem;
+      .cap-1 {
+        padding-top: 20rem;
+        font-size: 2.2rem;
+        color: white;
+      }
+      .caro-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+      }
+      .stu-2 {
+        border-radius: 24rem;
+        height: 6rem;
+        width: 6rem;
+        margin: 2rem auto;
+        filter: brightness(1.5);
+      }
+    }
+  }
+}

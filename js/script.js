@@ -14,7 +14,7 @@ $(window).scroll(function() {
   }
 });
 
-$(".owl-carousel").owlCarousel({
+$(".owl-1").owlCarousel({
   loop: true,
   margin: 10,
   responsiveClass: true,
@@ -38,21 +38,18 @@ $(".owl-carousel").owlCarousel({
   },
   navText: [
     "<i class='fas fa-angle-left fa-2x'></i>",
-    "<i class='fa fa-angle-right fa-2x'></i>"
+    "<i class='fas fa-angle-right fa-2x'></i>"
   ]
 });
 
 $(document).ready(function() {
-  $(".owl-dots").remove();
-
-  console.log("done");
-});
-
-$(document).ready(function() {
+  $("#carousel2 .owl-dots span").addClass("fas fa-circle");
+  $("#carousel2 .owl-nav").addClass("d-none");
+  $(".owl-1 .owl-dots").addClass("d-none");
   if ($(document).width() < 500) {
     //$(".all").removeClass("container");
     //$(".all").removeClass("py-3");
-    $(".fa-circle").removeClass("fa-stack-2x");
+    //$(".fa-circle").removeClass("fa-stack-2x");
     // $(".col").addClass("xs-pr-0");
     //$(".col-3").addClass("xs-pr-0");
     //$(".col-4").addClass("xs-pr-0");
@@ -87,4 +84,35 @@ $(".navlinks a").on("click", function(e) {
       }
     );
   }
+});
+
+$("#carousel2").owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  center: true,
+  pagination: true,
+  dots: true,
+  autoplayTimeout: 2000,
+  autoplay: true,
+  //animateOut: "fadeOut",
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 1,
+      nav: false
+    },
+    1000: {
+      items: 1,
+      nav: true,
+      loop: true
+    }
+  },
+  navText: [
+    "<i class='fas fa-angle-left fa-2x'></i>",
+    "<i class='fas fa-angle-right fa-2x'></i>"
+  ]
 });

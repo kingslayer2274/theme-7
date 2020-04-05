@@ -1,0 +1,34 @@
+#library {
+  margin-top: 0 !important;
+  background-color: $bg-light;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  .lib-title {
+    color: $dark-sea;
+    font-size: 2rem;
+  }
+  .fa-book {
+    color: $dark;
+  }
+  .lib-container {
+    padding: 2.7rem 3.5rem;
+
+    top: -12rem;
+    right: 0rem;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    .title {
+      color: $dark-sea;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and(max-width:500px) {
+  #library {
+    .lib-container {
+      top: 6rem;
+    }
+  }
+}
