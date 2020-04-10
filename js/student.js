@@ -55,3 +55,9 @@ $(window).scroll(function() {
     $(".nav").removeClass("affix");
   }
 });
+
+$(document).ready(function() {
+  if ($(document).width() < 500) {
+    $("#courses").attr("style", "margin-top: 0 !important");
+  }
+});
