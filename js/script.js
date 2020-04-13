@@ -116,3 +116,35 @@ $("#carousel2").owlCarousel({
     "<i class='fas fa-angle-right fa-2x'></i>"
   ]
 });
+$(document).ready(function() {
+  $(document).scroll(function() {
+    console.log($(document).scrollTop());
+    sc_top = $(document).scrollTop();
+    if (sc_top > 202) {
+      $("#contact-info .title").addClass("scroll-1");
+    } else {
+      $("#contact-info .title").removeClass("scroll-1");
+    }
+  });
+});
+
+$(document).ready(function() {
+  if ($(document).width() < 500) {
+    {
+      $(".dropdown a").click(function() {
+        setTimeout(function() {
+          console.log("it works");
+          $(".dropdown-menu").removeAttr("style");
+          // $(".dropdown-menu .show").attr(
+          //   "style",
+          //   " position: absolute; transform : translate3d(0,-147px,0); top:0;left:0;will-change:transform;"
+          // );
+        }, 10);
+      });
+    }
+  }
+});
+
+function test() {
+  console.log("nicely done");
+}

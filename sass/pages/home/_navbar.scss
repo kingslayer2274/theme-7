@@ -31,11 +31,11 @@ body {
 .nav div.logo a {
   text-decoration: none;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .nav div.logo a:hover {
-  color: #00e676;
+  color: $dark;
 }
 
 .nav div.main_list {
@@ -67,7 +67,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-  color: #00e676;
+  color: $dark;
 }
 
 /* Home section */
@@ -202,6 +202,14 @@ body {
 .navTrigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+}
+
+.dropdown-menu {
+  background-color: $sand;
+  a {
+    font-size: 1.2rem !important;
+    line-height: 2rem !important;
+  }
 }
 
 @-webkit-keyframes inM {

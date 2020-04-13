@@ -25,10 +25,10 @@ body {
 .nav div.logo a {
   text-decoration: none;
   color: #fff;
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .nav div.logo a:hover {
-  color: #00e676; }
+  color: #379683; }
 
 .nav div.main_list {
   height: 65px;
@@ -55,7 +55,7 @@ body {
   font-size: 2rem; }
 
 .nav div.main_list ul li a:hover {
-  color: #00e676; }
+  color: #379683; }
 
 /* Home section */
 .home {
@@ -164,6 +164,12 @@ body {
 .navTrigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards; }
+
+.dropdown-menu {
+  background-color: #b1a296; }
+  .dropdown-menu a {
+    font-size: 1.2rem !important;
+    line-height: 2rem !important; }
 
 @-webkit-keyframes inM {
   50% {
@@ -896,3 +902,273 @@ body #about-info {
     body #about-info .col-md-4 ul li svg {
       color: #7395ae;
       margin-right: 1rem; }
+
+body #grad-home .bg {
+  background-image: linear-gradient(to right, rgba(85, 122, 149, 0.4), rgba(85, 122, 149, 0.4)), url("../images/campus-6.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+  height: 100vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 0% 100%);
+  transition: all 0.5s;
+  position: relative;
+  z-index: 20; }
+  body #grad-home .bg:hover {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+
+body #grad-home .under {
+  position: absolute;
+  top: 85vh;
+  right: 3rem;
+  color: #7395ae;
+  border: 1px solid #5d5c61;
+  z-index: 10; }
+
+body #grad-home .title {
+  padding-top: 15rem;
+  overflow-x: hidden; }
+  body #grad-home .title .main {
+    font-weight: bold;
+    color: white;
+    font-size: 2.8rem;
+    animation: welcome 1s ease-in-out;
+    transition: all 0.5s; }
+    body #grad-home .title .main:hover {
+      transform: scale3d(1.1, 1.1, 1.1);
+      animation: colors 2s; }
+  body #grad-home .title .sub {
+    color: whitesmoke;
+    font-size: 1.3rem; }
+
+body #jobs .title .main {
+  color: white; }
+
+body #jobs .title .sub {
+  color: #f6f8fa;
+  font-size: 1.2rem; }
+
+body #jobs .owl-carousel {
+  position: relative; }
+  body #jobs .owl-carousel .owl-nav .owl-next,
+  body #jobs .owl-carousel .owl-nav .owl-prev {
+    padding: 4rem 2rem !important;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 3rem; }
+    body #jobs .owl-carousel .owl-nav .owl-next:hover,
+    body #jobs .owl-carousel .owl-nav .owl-prev:hover {
+      background-color: white;
+      transition: all 0.5s; }
+  body #jobs .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 8%; }
+  body #jobs .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 8%; }
+  body #jobs .owl-carousel .owl-dots svg {
+    color: #5d5c61;
+    font-size: 0.9rem; }
+  body #jobs .owl-carousel .slider-1,
+  body #jobs .owl-carousel .slider-2 {
+    padding: 10rem 1rem;
+    background-position: 0 50%; }
+  body #jobs .owl-carousel .slider-1 {
+    padding-bottom: 6rem;
+    background-image: linear-gradient(to right, rgba(85, 122, 149, 0.4), rgba(85, 122, 149, 0.4)), url("../images/laptop.jpg");
+    background-size: cover; }
+    body #jobs .owl-carousel .slider-1 .cap-1 {
+      padding-top: 20rem;
+      font-size: 3rem;
+      color: white; }
+    body #jobs .owl-carousel .slider-1 .caro-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white; }
+    body #jobs .owl-carousel .slider-1 .stu-1 {
+      border-radius: 24rem;
+      height: 6rem;
+      width: 6rem;
+      margin: 2rem auto;
+      filter: brightness(1.5); }
+  body #jobs .owl-carousel .slider-2 {
+    padding-bottom: 6rem;
+    background-image: linear-gradient(to right, rgba(85, 122, 149, 0.4), rgba(85, 122, 149, 0.4)), url("../images/computer-keyboard.jpg");
+    background-size: cover; }
+    body #jobs .owl-carousel .slider-2 .cap-1 {
+      padding-top: 20rem;
+      font-size: 2.2rem;
+      color: white; }
+    body #jobs .owl-carousel .slider-2 .caro-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white; }
+    body #jobs .owl-carousel .slider-2 .stu-2 {
+      border-radius: 24rem;
+      height: 6rem;
+      width: 6rem;
+      margin: 2rem auto;
+      filter: brightness(1.5); }
+
+body #contact-info {
+  position: fixed;
+  top: 40%;
+  right: -20%;
+  box-shadow: -1px -1px 43px 10px rgba(0, 0, 0, 0.75);
+  max-width: 20rem;
+  transition: all 0.5s;
+  padding: 2rem 1rem; }
+  body #contact-info:hover {
+    right: 0%; }
+  body #contact-info .title {
+    color: #f6f8fa;
+    font-weight: bold; }
+  body #contact-info .icons svg {
+    color: #b1a296;
+    font-size: 1.2rem;
+    transition: all 0.5s; }
+    body #contact-info .icons svg:hover {
+      color: #379683; }
+
+body #grad-news .title {
+  padding-top: 8rem; }
+  body #grad-news .title .main {
+    font-size: 1.8rem; }
+  body #grad-news .title .sub {
+    color: #555;
+    font-size: 1.2rem; }
+
+body #grad-news #accordion {
+  max-width: 40rem;
+  margin: 6rem auto; }
+
+.scroll-1 {
+  color: #557a95 !important;
+  transition: all 0.5s; }
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes colors {
+  0% {
+    color: red; }
+  100% {
+    color: blue; } }
+
+@media only screen and (max-width: 500px) {
+  #grad-home .under {
+    top: 90vh !important;
+    right: 1rem !important; } }
+
+body #high-home .owl-carousel {
+  position: relative; }
+  body #high-home .owl-carousel .owl-nav .owl-next,
+  body #high-home .owl-carousel .owl-nav .owl-prev {
+    padding: 4rem 2rem !important;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 3rem; }
+    body #high-home .owl-carousel .owl-nav .owl-next:hover,
+    body #high-home .owl-carousel .owl-nav .owl-prev:hover {
+      background-color: white;
+      transition: all 0.5s; }
+  body #high-home .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 8%; }
+  body #high-home .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 8%; }
+  body #high-home .owl-carousel .owl-dots svg {
+    color: #5d5c61;
+    font-size: 0.9rem; }
+  body #high-home .owl-carousel .slider-1,
+  body #high-home .owl-carousel .slider-2 {
+    padding: 10rem 1rem;
+    height: 100vh;
+    background-position: 0 50%; }
+  body #high-home .owl-carousel .slider-1 {
+    padding-bottom: 6rem;
+    background-image: linear-gradient(to right, rgba(85, 122, 149, 0.4), rgba(85, 122, 149, 0.4)), url("../images/researcher-2.jpg");
+    background-size: cover; }
+    body #high-home .owl-carousel .slider-1 .cap-1 {
+      padding-top: 7rem;
+      font-size: 3rem;
+      color: white; }
+    body #high-home .owl-carousel .slider-1 .caro-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white; }
+    body #high-home .owl-carousel .slider-1 .stu-1 {
+      border-radius: 24rem;
+      height: 6rem;
+      width: 6rem;
+      margin: 2rem auto;
+      filter: brightness(1.5); }
+  body #high-home .owl-carousel .slider-2 {
+    padding-bottom: 6rem;
+    background-image: linear-gradient(to right, rgba(85, 122, 149, 0.4), rgba(85, 122, 149, 0.4)), url("../images/researcher-1.jpg");
+    background-size: cover; }
+    body #high-home .owl-carousel .slider-2 .cap-1 {
+      padding-top: 7rem;
+      font-size: 2.2rem;
+      color: white; }
+    body #high-home .owl-carousel .slider-2 .caro-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white; }
+    body #high-home .owl-carousel .slider-2 .stu-2 {
+      border-radius: 24rem;
+      height: 6rem;
+      width: 6rem;
+      margin: 2rem auto;
+      filter: brightness(1.5); }
+
+body #programs {
+  padding-top: 8rem;
+  padding-bottom: 5rem; }
+  body #programs .title .sub {
+    color: #555;
+    font-size: 1.1rem; }
+  body #programs .card .card-footer a {
+    margin-left: 30%;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+    color: #b1a296; }
+    body #programs .card .card-footer a:hover {
+      transform: scale(1.1, 1.1);
+      color: #7395ae; }
+  body #programs .card .overlay {
+    position: absolute;
+    transition: all 0.5s ease-in;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0; }
+  body #programs .card:hover .overlay {
+    top: 0%;
+    bottom: 4.2rem;
+    background-color: #557a95;
+    opacity: 0.4; }
+
+body #supervisor {
+  background-image: linear-gradient(to right, rgba(85, 122, 149, 0.4), rgba(85, 122, 149, 0.4)), url("../images/researcher-3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 6rem; }
+  body #supervisor .title {
+    color: white; }
+  body #supervisor a {
+    text-decoration: underline;
+    color: #f6f8fa;
+    transition: all 0.5s; }
+    body #supervisor a:hover {
+      transform: scale(1.1, 1.1);
+      color: #b1a296; }
+    body #supervisor a:active {
+      transform: scale(1, 1); }
